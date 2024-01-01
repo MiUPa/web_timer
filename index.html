@@ -2,49 +2,49 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>時報アプリ</title>
+<title>時報</title>
 <script>
-// 通知を表示する関数
+
 function showNotification() {
   const date = new Date();
-  const notification = new Notification("時報通知", {
-    body: "現在の時刻は " + date.getHours() + "時" + date.getMinutes() + "分" + date.getSeconds() + "秒です。",
-    icon: "path/to/your/icon.png" // 通知に表示するアイコンのパス
+  const notification = new Notification(date.getHours() + "時" + date.getMinutes() + "分", {
+    // body:  date.getHours() + "時" + date.getMinutes() + "分",　//なんか他に表示したいものがあれb
+    // icon: "path/to/your/icon.png" // 通知に表示したいアイコンがあれば
   });
 }
+// // 通知の許可確認
+// function askNotificationPermission() {
+//   // ブラウザが通知をサポートしているか確認
+//   if (!("Notification" in window)) {
+//     alert("このブラウザはデスクトップ通知をサポートしていません。");
+//   } else if (Notification.permission === "granted") {
+//     // すでに通知の許可が得られている場合は、通知を表示
+//     showNotification();
+//   } else if (Notification.permission !== "denied") {
+//     // 通知の許可をユーザーに求める
+//     Notification.requestPermission().then(permission => {
+//       if (permission === "granted") {
+//         // 許可が得られた場合は、通知を表示
+//         showNotification();
+//       }
+//     });
+//   }
+// }
 
-// 通知の許可を求める関数
-function askNotificationPermission() {
-  // ブラウザが通知をサポートしているか確認
-  if (!("Notification" in window)) {
-    alert("このブラウザはデスクトップ通知をサポートしていません。");
-  } else if (Notification.permission === "granted") {
-    // すでに通知の許可が得られている場合は、通知を表示
-    showNotification();
-  } else if (Notification.permission !== "denied") {
-    // 通知の許可をユーザーに求める
-    Notification.requestPermission().then(permission => {
-      if (permission === "granted") {
-        // 許可が得られた場合は、通知を表示
-        showNotification();
-      }
-    });
-  }
-}
-
-// 1秒ごとに通知を表示するように設定
+// 1時間ごとに通知を表示するように設定
 setInterval(() => {
   if (Notification.permission === "granted") {
     showNotification();
   }
-}, 1000);
+}, 3600000);
 
+showNotification()
 // ページ読み込み時に通知の許可を求める
-document.addEventListener('DOMContentLoaded', askNotificationPermission);
+// document.addEventListener('DOMContentLoaded', askNotificationPermission);
 </script>
 </head>
 <body>
-<h1>時報アプリ</h1>
-<p>このアプリは1秒ごとにデスクトップ通知を行います。</p>
+<h1>時報</h1>
+<p>このアプリは1時間ごとにデスクトップ通知を行います。</p>
 </body>
 </html>
