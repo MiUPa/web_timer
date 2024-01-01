@@ -6,12 +6,18 @@ body {
     /*background-position: center;*/
     background-size: 100% auto;
     font-family: 'Kaisei Opti', sans-serif;
+
+}
+body {
+
 }
 
 .wrapper {
     color: #fff;
+    width: 50%;
     text-align: center;
     background-color: rgba(0,0,0,.7);
     border-radius: 25px;
+    margin: auto;
 
 }

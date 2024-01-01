@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="262aaa3d-d0bb-440a-a1eb-99ffc75d6de9" name="Changes" comment="CSS追加" />
+    <list default="true" id="262aaa3d-d0bb-440a-a1eb-99ffc75d6de9" name="Changes" comment="不要ファイル削除">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704083432110</updated>
-      <workItem from="1704083433826" duration="11989000" />
+      <workItem from="1704083433826" duration="13499000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -134,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704106926795</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="不要ファイル削除">
+      <option name="closed" value="true" />
+      <created>1704107029822</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704107029822</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +160,7 @@
     <MESSAGE value="1時間ごとに設定" />
     <MESSAGE value="body　文追加　「1時間座り続けると余命が22分縮まる」" />
     <MESSAGE value="CSS追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS追加" />
+    <MESSAGE value="不要ファイル削除" />
+    <option name="LAST_COMMIT_MESSAGE" value="不要ファイル削除" />
   </component>
 </project>

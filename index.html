@@ -13,24 +13,24 @@ function showNotification() {
       icon: "bird_shiro_hato.png" // 通知に表示したいアイコンがあれば
   });
 }
-// // 通知の許可確認
-// function askNotificationPermission() {
-//   // ブラウザが通知をサポートしているか確認
-//   if (!("Notification" in window)) {
-//     alert("このブラウザはデスクトップ通知をサポートしていません。");
-//   } else if (Notification.permission === "granted") {
-//     // すでに通知の許可が得られている場合は、通知を表示
-//     showNotification();
-//   } else if (Notification.permission !== "denied") {
-//     // 通知の許可をユーザーに求める
-//     Notification.requestPermission().then(permission => {
-//       if (permission === "granted") {
-//         // 許可が得られた場合は、通知を表示
-//         showNotification();
-//       }
-//     });
-//   }
-// }
+// 通知の許可確認
+function askNotificationPermission() {
+  // ブラウザが通知をサポートしているか確認
+  if (!("Notification" in window)) {
+    alert("このブラウザはデスクトップ通知をサポートしていません。");
+  } else if (Notification.permission === "granted") {
+    // すでに通知の許可が得られている場合は、通知を表示
+    showNotification();
+  } else if (Notification.permission !== "denied") {
+    // 通知の許可をユーザーに求める
+    Notification.requestPermission().then(permission => {
+      if (permission === "granted") {
+        // 許可が得られた場合は、通知を表示
+        showNotification();
+      }
+    });
+  }
+}
 
 // 1時間ごとに通知を表示するように設定
 setInterval(() => {
@@ -43,6 +43,7 @@ showNotification()
 // ページ読み込み時に通知の許可を求める
 // document.addEventListener('DOMContentLoaded', askNotificationPermission);
 </script>
+    <link rel="shortcut icon" href="bird_shiro_hato.png" />
 </head>
 <body>
 <div class="wrapper">
