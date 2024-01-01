@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="262aaa3d-d0bb-440a-a1eb-99ffc75d6de9" name="Changes" comment="body　文追加　「1時間座り続けると余命が22分縮まる」">
-      <change afterPath="$PROJECT_DIR$/bird_shiro_hato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bansyu-retoromin-R_ver.3.0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bansyu-retoromin-R_ver.3.0/Bansyu-retoromin-R_ver.3.0.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bansyu-retoromin-R_ver.3.0/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syougatsu_hatsuhinode_2024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yuta801-27.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -18,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -47,6 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "develop",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704083432110</updated>
-      <workItem from="1704083433826" duration="7517000" />
+      <workItem from="1704083433826" duration="11465000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -120,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704093150540</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="body　文追加　「1時間座り続けると余命が22分縮まる」">
+      <option name="closed" value="true" />
+      <created>1704094796605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704094796605</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
