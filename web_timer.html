@@ -3,21 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <title>時報アプリ</title>
+<script>
+// 通知を表示する関数
+function showNotification() {
+  const date = new Date();
+  const notification = new Notification("時報通知", {
+    body: "現在の時刻は " + date.getHours() + "時" + date.getMinutes() + "分" + date.getSeconds() + "秒です。",
+    icon: "path/to/your/icon.png" // 通知に表示するアイコンのパス
+  });
+}
+
+// 通知の許可を求める関数
+function askNotificationPermission() {
+  // ブラウザが通知をサポートしているか確認
+  if (!("Notification" in window)) {
+    alert("このブラウザはデスクトップ通知をサポートしていません。");
+  } else if (Notification.permission === "granted") {
+    // すでに通知の許可が得られている場合は、通知を表示
+    showNotification();
+  } else if (Notification.permission !== "denied") {
+    // 通知の許可をユーザーに求める
+    Notification.requestPermission().then(permission => {
+      if (permission === "granted") {
+        // 許可が得られた場合は、通知を表示
+        showNotification();
+      }
+    });
+  }
+}
+
+// 1秒ごとに通知を表示するように設定
+setInterval(() => {
+  if (Notification.permission === "granted") {
+    showNotification();
+  }
+}, 1000);
+
+// ページ読み込み時に通知の許可を求める
+document.addEventListener('DOMContentLoaded', askNotificationPermission);
+</script>
 </head>
 <body>
 <h1>時報アプリ</h1>
-<script>
-// 1時間ごとに実行される関数
-function showHourlyAlert() {
-  const date = new Date();
-  alert("現在の時刻は " + date.getHours() + "時です。");
-}
-
-// 1時間（3600000ミリ秒）ごとにshowHourlyAlert関数を実行
-setInterval(showHourlyAlert, 3600000);
-
-// ページ読み込み時にも実行
-showHourlyAlert();
-</script>
+<p>このアプリは1秒ごとにデスクトップ通知を行います。</p>
 </body>
 </html>
