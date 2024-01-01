@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>時報アプリ</title>
+</head>
+<body>
+<h1>時報アプリ</h1>
+<script>
+// 1時間ごとに実行される関数
+function showHourlyAlert() {
+  const date = new Date();
+  alert("現在の時刻は " + date.getHours() + "時です。");
+}
+
+// 1時間（3600000ミリ秒）ごとにshowHourlyAlert関数を実行
+setInterval(showHourlyAlert, 3600000);
+
+// ページ読み込み時にも実行
+showHourlyAlert();
+</script>
+</body>
+</html>
